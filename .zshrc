@@ -29,6 +29,3 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 # Go config
 export PATH="$PATH:/usr/local/go/bin"
-
-# Alias
-alias code='open $@ -a "Visual Studio Code"'
