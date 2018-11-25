@@ -3,29 +3,25 @@ export ZSH=$HOME/.oh-my-zsh
 export LANG=en_US.UTF-8
 ZSH_THEME="robbyrussell"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
-plugins=(git nvm pip python ruby docker docker-compose kubectl golang)
+plugins=(git docker kubectl)
 source $ZSH/oh-my-zsh.sh
 
-# User config
+# User
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 export MANPATH="/usr/local/man:$MANPATH"
-
-# Preferred editor
 export EDITOR='vim'
 
-# ssh
-export SSH_PATH="~/.ssh"
+# Node
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-# Ruby config
+# Ruby
 export PATH="/usr/local/bin:$PATH"
 eval "$(rbenv init -)"
 
-# NVM config
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-
-# Python config
+# Python
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
-# Go config
+# Go
 export PATH="$PATH:/usr/local/go/bin"
