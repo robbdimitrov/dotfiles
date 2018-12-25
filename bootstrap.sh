@@ -19,7 +19,7 @@ function install() {
 function showSuccess() {
   echo "";
   echo "Install successful";
-  echo "Run '$ source ~/.zshrc' to finish the setup.";
+  echo "Run 'source ~/.zshrc' to finish the setup.";
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
