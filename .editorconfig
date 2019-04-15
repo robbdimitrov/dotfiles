@@ -8,7 +8,7 @@ indent_style = space
 indent_size = 2
 trim_trailing_whitespace = true
 
-[*.{py,ts,mjs,js}]
+[*.{py,ts}]
 indent_size = 4
 
 [Makefile]
