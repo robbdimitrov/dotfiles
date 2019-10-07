@@ -7,7 +7,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin"
 export MANPATH="/usr/local/man:$MANPATH"
 export EDITOR='vim'
 
