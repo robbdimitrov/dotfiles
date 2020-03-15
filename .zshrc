@@ -2,7 +2,6 @@
 export ZSH=$HOME/.oh-my-zsh
 export LANG=en_US.UTF-8
 ZSH_THEME=robbyrussell
-DISABLE_UNTRACKED_FILES_DIRTY=true
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
