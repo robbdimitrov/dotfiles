@@ -11,6 +11,10 @@ export EDITOR=vim
 # Brew
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
+# Go
+export GOPATH=~/.go
+export PATH=$GOPATH/bin:$PATH
+
 # Ruby
 export PATH=/usr/local/opt/ruby/bin:$PATH
 export PATH=$(gem env gemdir)/bin:$PATH
