@@ -1,0 +1,22 @@
+{
+    "workbench.startupEditor": "none",
+    "git.blame.editorDecoration.enabled": true,
+    "git.blame.editorDecoration.disableHover": true,
+    "chat.titleBar.signIn.enabled": false,
+    "chat.disableAIFeatures": true,
+    "redhat.telemetry.enabled": false,
+    "git.confirmSync": false,
+    "editor.rulers": [120],
+    "terminal.integrated.initialHint": false,
+    "update.showReleaseNotes": false,
+    "claudeCode.preferredLocation": "sidebar",
+    "svelte.enable-ts-plugin": true,
+    "workbench.browser.openLocalhostLinks": false,
+    "files.insertFinalNewline": true,
+    "files.exclude": {
+        "**/.agents": true,
+        "**/.antigravitycli": true,
+        "**/.claude": true,
+        "**/.vscode": true
+    }
+}

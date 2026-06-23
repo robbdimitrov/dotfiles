@@ -1,0 +1,46 @@
+# ==============================================================================
+# VERIFIED GHOSTTY FROSTED GLASS CONFIGURATION
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. VISUAL AESTHETIC & THE GLASS LAYER
+# ------------------------------------------------------------------------------
+# Set the color palette (Ghostty includes this space-delimited theme natively)
+# theme = "Catppuccin Mocha"
+# theme = ayu
+theme = "GitHub Dark Default"
+
+# Controlled transparency (Value from 0.0 to 1.0)
+background-opacity = 0.90
+
+# Native window blur intensity (Accepts integers, typically 1 to 20)
+background-blur = 15
+
+# Keep OS window controls, titlebar, and border rendering fully intact
+window-decoration = true
+
+# On macOS, seamlessly integrate tabs cleanly into the titlebar line
+macos-titlebar-style = tabs
+
+# ------------------------------------------------------------------------------
+# 2. TYPOGRAPHY & PADDING
+# ------------------------------------------------------------------------------
+font-family = "JetBrains Mono"
+font-size = 13.5
+
+# Safe line height buffer (Accepts percentages or pixel counts)
+adjust-cell-height = 12%
+
+# Breathing room margins separating text from the physical window border
+window-padding-x = 14
+window-padding-y = 14
+
+# ------------------------------------------------------------------------------
+# 3. CURSOR & INTERACTION DEFAULTS
+# ------------------------------------------------------------------------------
+cursor-style = block
+cursor-style-blink = true
+shell-integration-features = no-cursor
+
+mouse-hide-while-typing = true
+copy-on-select = true
