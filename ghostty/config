@@ -46,11 +46,5 @@ copy-on-select = true
 # 4. MACOS NATIVE KEYBINDS
 # ------------------------------------------------------------------------------
 # Treat the left Option key as Alt (enables Option+Left/Right/Backspace word jumps)
+# Ghostty handles the actual keybinds (alt+arrow_left, super+arrow_left) by default!
 macos-option-as-alt = left
-
-# Map Cmd+Left/Right to jump to start/end of line (sends Ctrl+A / Ctrl+E)
-keybind = cmd+left=text:\x01
-keybind = cmd+right=text:\x05
-
-# Map Cmd+Backspace to delete the current line (sends Ctrl+U)
-keybind = cmd+backspace=text:\x15
