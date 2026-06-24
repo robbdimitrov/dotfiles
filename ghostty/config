@@ -8,7 +8,7 @@
 theme = light:Catppuccin Latte, dark:Catppuccin Mocha
 
 # Controlled transparency (Value from 0.0 to 1.0)
-background-opacity = 0.90
+background-opacity = 0.95
 
 # Native window blur intensity (Accepts integers, typically 1 to 20)
 background-blur = 15
