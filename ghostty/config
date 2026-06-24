@@ -5,9 +5,6 @@
 # ------------------------------------------------------------------------------
 # 1. VISUAL AESTHETIC & THE GLASS LAYER
 # ------------------------------------------------------------------------------
-# Set the color palette (Ghostty includes this space-delimited theme natively)
-# theme = "Catppuccin Mocha"
-# theme = ayu
 theme = "GitHub Dark Default"
 
 # Controlled transparency (Value from 0.0 to 1.0)
@@ -44,3 +41,16 @@ shell-integration-features = no-cursor
 
 mouse-hide-while-typing = true
 copy-on-select = true
+
+# ------------------------------------------------------------------------------
+# 4. MACOS NATIVE KEYBINDS
+# ------------------------------------------------------------------------------
+# Treat the left Option key as Alt (enables Option+Left/Right/Backspace word jumps)
+macos-option-as-alt = left
+
+# Map Cmd+Left/Right to jump to start/end of line (sends Ctrl+A / Ctrl+E)
+keybind = cmd+left=text:\x01
+keybind = cmd+right=text:\x05
+
+# Map Cmd+Backspace to delete the current line (sends Ctrl+U)
+keybind = cmd+backspace=text:\x15
