@@ -48,3 +48,4 @@ copy-on-select = true
 # Treat the left Option key as Alt (enables Option+Left/Right/Backspace word jumps)
 # Ghostty handles the actual keybinds (alt+arrow_left, super+arrow_left) by default!
 macos-option-as-alt = left
+keybind = super+v=paste_from_clipboard

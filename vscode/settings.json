@@ -5,14 +5,32 @@
     "chat.titleBar.signIn.enabled": false,
     "chat.disableAIFeatures": true,
     "redhat.telemetry.enabled": false,
+    "telemetry.telemetryLevel": "off",
     "git.confirmSync": false,
-    "editor.rulers": [120],
+    "editor.rulers": [
+        120
+    ],
     "terminal.integrated.initialHint": false,
     "update.showReleaseNotes": false,
     "claudeCode.preferredLocation": "sidebar",
     "svelte.enable-ts-plugin": true,
     "workbench.browser.openLocalhostLinks": false,
     "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "editor.formatOnSave": true,
+    "editor.linkedEditing": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.minimap.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "files.associations": {
+        "*.vimrc": "properties",
+        ".vimrc": "properties",
+        "vimrc": "properties",
+        "*.proto": "cpp"
+    },
     "files.exclude": {
         "**/.agents": true,
         "**/.antigravitycli": true,
