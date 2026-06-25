@@ -1,6 +1,6 @@
 " ====================================================================
 " Plugin-Free IDE-like Vim Configuration
-" Classic Vim only, no plugins, no Neovim Lua, no ripgrep dependency
+" Classic Vim only, no plugins, no Neovim Lua
 " Focus: Docker/Colima, YAML, Markdown, JS/TS, Svelte, React, Angular,
 "        Go, Rust, shell, JSON, HTML/CSS, Terraform/HCL
 " ====================================================================
@@ -48,9 +48,11 @@ set nolist
 
 set mouse=a
 
-if has('termguicolors')
-  set termguicolors
-endif
+" Improve contrast for spell checking (using terminal ANSI colors 1, 4, 5, 6)
+hi SpellBad cterm=undercurl gui=undercurl guisp=Red ctermbg=NONE ctermfg=1 guibg=NONE guifg=NONE
+hi SpellCap cterm=undercurl gui=undercurl guisp=Blue ctermbg=NONE ctermfg=4 guibg=NONE guifg=NONE
+hi SpellRare cterm=undercurl gui=undercurl guisp=Magenta ctermbg=NONE ctermfg=5 guibg=NONE guifg=NONE
+hi SpellLocal cterm=undercurl gui=undercurl guisp=Cyan ctermbg=NONE ctermfg=6 guibg=NONE guifg=NONE
 
 if has('clipboard')
   set clipboard=unnamedplus
@@ -142,9 +144,14 @@ set omnifunc=syntaxcomplete#Complete
 " --------------------------------------------------------------------
 " Grep/search helpers
 " --------------------------------------------------------------------
-" Uses normal system grep. No ripgrep required.
-set grepprg=grep\ -nH\ $*
-set grepformat=%f:%l:%m
+" Uses ripgrep for blazing fast searches. Automatically respects .gitignore!
+if executable('rg')
+  set grepprg=rg\ --vimgrep\ --smart-case\ --hidden\ --glob\ '!.git'
+  set grepformat=%f:%l:%c:%m,%f:%l:%m
+else
+  set grepprg=grep\ -nH\ --exclude-dir=.git\ --exclude-dir=node_modules\ $*
+  set grepformat=%f:%l:%m
+endif
 
 " Examples:
 "   :grep TODO **/*.js
@@ -251,8 +258,8 @@ augroup END
 augroup QualityOfLife
   autocmd!
 
-  " Trim trailing whitespace on save
-  autocmd BufWritePre * %s/\s\+$//e
+  " Trim trailing whitespace on save (seamless: preserves cursor position and search history)
+  autocmd BufWritePre * let s:save_view = winsaveview() | keeppatterns %s/\s\+$//e | call winrestview(s:save_view)
 
   " Restore cursor position
   autocmd BufReadPost *
