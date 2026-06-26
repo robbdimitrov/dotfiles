@@ -12,7 +12,6 @@
     ],
     "terminal.integrated.initialHint": false,
     "update.showReleaseNotes": false,
-    "claudeCode.preferredLocation": "sidebar",
     "svelte.enable-ts-plugin": true,
     "workbench.browser.openLocalhostLinks": false,
     "files.insertFinalNewline": true,
@@ -25,6 +24,7 @@
     "editor.minimap.enabled": false,
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
+    "terminal.integrated.scrollback": 10000,
     "files.associations": {
         "*.vimrc": "properties",
         ".vimrc": "properties",
@@ -35,6 +35,11 @@
         "**/.agents": true,
         "**/.antigravitycli": true,
         "**/.claude": true,
-        "**/.vscode": true
-    }
+        "**/.vscode": true,
+        "**/.DS_Store": true
+    },
+    "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+    "workbench.preferredLightColorTheme": "Catppuccin Latte",
+    "workbench.iconTheme": "catppuccin-mocha",
+    "window.autoDetectColorScheme": true
 }
