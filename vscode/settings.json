@@ -29,7 +29,7 @@
         "*.vimrc": "properties",
         ".vimrc": "properties",
         "vimrc": "properties",
-        "*.proto": "cpp"
+        "*.proto": "properties"
     },
     "files.exclude": {
         "**/.agents": true,

@@ -17,11 +17,6 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias -- -='cd -'
 
-# Safe operations
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
-
 # Common utilities
 alias c='clear'
 alias h='history'
